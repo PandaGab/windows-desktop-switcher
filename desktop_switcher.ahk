@@ -167,6 +167,7 @@ focusTheForemostWindow(targetDesktop) {
     if isWindowNonMinimized(foremostWindowId) {
         WinActivate, ahk_id %foremostWindowId%
     }
+    Send, !{Esc} ; Set the focus on the current window
 }
 
 isWindowNonMinimized(windowId) {
